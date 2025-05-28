@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Web Básica</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <header id="cabecera">
+            <h1 class="titulo-principal">Mi Página Web</h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="https://www.google.com" target="_blank">Google</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="contenido">
+            <section id="inicio">
+                <h2>Bienvenidos</h2>
+                <p>Esta es una <strong>página web básica</strong> que muestra diferentes elementos <em>HTML</em> y <em>CSS</em>.</p>
+                <p>Puedes usar esta plantilla para aprender los fundamentos del desarrollo web.</p>
+            </section>
+
+            <section id="servicios">
+                <h2>Nuestros Servicios</h2>
+                
+                <article class="servicio">
+                    <h3>Diseño Web</h3>
+                    <p>Servicios profesionales de diseño:</p>
+                    <ul class="lista-servicios">
+                        <li>Diseño a medida</li>
+                        <li>Maquetación HTML/CSS</li>
+                        <li>Optimización para SEO</li>
+                    </ul>
+                </article>
+
+                <article class="servicio">
+                    <h3>Desarrollo</h3>
+                    <p>Nuestro proceso de desarrollo:</p>
+                    <ol class="lista-proceso">
+                        <li>Reunión inicial</li>
+                        <li>Prototipado</li>
+                        <li>Desarrollo</li>
+                        <li>Pruebas</li>
+                        <li>Lanzamiento</li>
+                    </ol>
+                </article>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form id="formulario-contacto">
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                </form>
+            </section>
+        </main>
+
+        <footer id="pie">
+            <p>&copy; 2023 Página Web Básica. Todos los derechos reservados.</p>
+            <address>
+                Contacto: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a>
+            </address>
+        </footer>
+    </div>
+</body>
+</html>
